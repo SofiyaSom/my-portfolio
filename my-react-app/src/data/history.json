@@ -1,0 +1,10 @@
+[
+    {
+      "role": "Volunteer Information Technology ",
+      "organisation": "Build Bright University",
+      "startDate": "dec, 2018",
+      "endDate": "aug, 2019",
+      "experiences": ["Implemented server deployment best practices, including hardware compatibility checks.", "Diagnosed and resolved printer hardware and software issues.", "Maintained school network cables for proper connectivity and industry standards."],
+      "imageSrc": "history/bbulogo.jpg"
+    }
+  ]

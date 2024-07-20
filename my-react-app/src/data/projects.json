@@ -1,0 +1,10 @@
+[
+    {
+      "title": "Fashion Ecommerce Website",
+      "imageSrc": "projects/websitepicture.png",
+      "description": "Developed a responsive e-commerce website specializing in fashion products. The site includes features like product listings, detailed product pages, search functionality, and a shopping cart. It offers a seamless user experience with a clean and modern design.",
+      "skills": ["React", "React Router", "Axios", "HTML", "CSS", "JavaScript"],
+      "demo": "https://666ac29d4b9a65d1787a9ccb--wondrous-fudge-f9ad3e.netlify.app/",
+      "source": "https://github.com/SofiyaSom/Front-End-Developer-Projects/tree/main/Fashion-E-commerce-Website-Using-React"
+    }
+  ]

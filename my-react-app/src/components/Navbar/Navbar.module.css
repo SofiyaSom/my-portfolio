@@ -1,0 +1,143 @@
+@import "../../vars.css";
+
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 61px;
+    z-index: 2;
+    margin: 0 10%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.menu {
+    display: flex;
+}
+
+.menuItems {
+    display: flex;
+    gap: 47px;
+    list-style: none;
+}
+
+.menuItems a{
+    font-size: 25px;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.menuNavbar {
+    margin-left: 20px;
+    position: relative; /* Added to position the underline */
+  }
+  
+  .menuNav {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  .menuNav::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px; /* Adjust the thickness as needed */
+    bottom: -5px; /* Adjust to align the underline properly */
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s;
+  }
+  
+  .menuNav:hover::after {
+    width: 100%;
+  }
+
+.menuBtn {
+    display: none;
+}
+
+@media screen and (max-width: 830px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        position: absolute;
+        right: 0;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+        
+    }
+
+    .button {
+        background-color: #007BFF;
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #000; /* Adjust the text color as needed */
+        background-color: #fff; /* Adjust the background color as needed */
+        border: 1px solid #000; /* Optional: border for the button */
+        transition: color 0.3s;
+      }
+      
+      .button::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px; /* Adjust the height of the line */
+        bottom: 0;
+        left: 0;
+        background-color: #000; /* Adjust the color of the line */
+        transition: width 0.3s;
+      }
+      
+      .button:hover {
+        color: #007BFF; /* Adjust the hover text color as needed */
+      }
+      
+      .button:hover::after {
+        width: 100%;
+      }
+      
+
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menuItems {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        border-radius: 10px;
+        background-color: rgb(25, 55, 109);
+        background: linear-gradient(
+            0deg, 
+            rgba(25, 55, 109, 0.2) 0%,
+            rgba(25, 55, 109, 1)100%
+         );
+         padding: 24px 33px;
+         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .menuOpen {
+        display: flex;
+        z-index: 1;
+    }
+}
